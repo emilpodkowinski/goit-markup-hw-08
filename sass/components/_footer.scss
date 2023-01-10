@@ -1,0 +1,146 @@
+.footer { 
+    background: $darkBackgorund;
+    padding-top: 60px;
+    padding-left: 15px;
+
+    &__address {
+      display: flex;
+      gap: 70px;
+   }
+
+   &__social-media {
+      display: block;
+      margin-top: -18px; 
+      
+   }
+   
+   &__heading5 {
+      font-size: 14px;
+      font-weight: 700px;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+      color: $primaryColor;
+   }
+  
+   &__list {
+      display: flex;
+      gap: 10px;
+      padding-top: 20px;
+   }
+  
+   &__svg {
+      width: 44px;
+      height: 44px;
+      border: solid;
+      border: none;
+      border-radius: 50%;
+      fill: $primaryColor;
+      background: $backgroundColor;
+      padding: 12px;
+      display: flex;
+   }
+   
+   &__svg:hover,
+   &__svg:focus {
+      background: $blue;
+      transition: $typicalTransition;
+   }
+  
+   &__newsletter {
+      display: block;
+      margin-top: -18px;
+   }
+  
+   &__input {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+   }
+  
+   &__input--email {
+      width: 358px;
+      height: 50px;
+      font-size: 1rem;
+      line-height: 1.2;
+      padding-left: 16px;
+      background-color: $darkBackgorund;
+      border-radius: 4px;
+      border-color: $footerInputColor;
+      outline: none;
+   }
+   
+   &__input--email:hover,
+   &__input--email:focus {
+      border-color: $blue;
+      transition: $blue;
+      transition-duration: 250ms;
+   }
+  
+   &__button {
+      cursor: pointer;
+      font-weight: 700px;
+      font-size: 1rem;
+      line-height: 1.8;
+      letter-spacing: 0.06em;
+      color: $primaryColor;
+      background-color: $blue;
+      text-align: left;
+      width: 200px;
+      height: 50px;
+      border: none;
+      border-radius: 4px;
+      padding-left: 42px;
+   }
+  
+   &__icon {
+      position: relative;
+      display: block;
+      fill: $primaryColor;
+      right: 120px;
+      top: 32px;
+   }
+ }
+
+ .logo__white {
+    color: $primaryColor;
+ }
+
+ 
+
+ .address {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    gap: 9px;
+
+   &__contact:hover,
+   &__contact:focus {
+   color: $blue;
+   transition: $typicalTransition;
+}
+
+ &__link,
+ &__contact {
+   font-size: 0.875rem;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
+   color: $primaryColor;
+   text-decoration: none;
+   transition: $typicalTransition;
+}
+
+&__contact {
+   text-decoration: none;
+   color: $primaryColor 60%;
+}
+
+&__link:hover,
+&__link:focus {
+   color: $blue;
+   transition: $typicalTransition;
+}
+
+ }
+
+ 

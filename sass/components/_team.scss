@@ -1,0 +1,79 @@
+.section {
+   padding-top: 94px;
+}
+
+.team {
+    background: $dirtierWhite;
+ }
+ 
+.employess {
+    font-weight: 700px;
+    font-size: 2.25rem;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: $almostBlack;
+    text-align: center;
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+      padding-bottom: 94px;
+      gap: 30px;
+      text-align: center;
+   }
+   
+   &__theme {
+      background: $primaryColor;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+   }
+  
+   &__name {
+      display:flex;
+      flex-direction: column;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      gap: 10px;
+      font-weight: 500px;
+      font-size: 1rem;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+      color: $almostBlack;
+   }
+   
+   &__occupation {
+      font-size: 1rem;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+      color: $grey;
+   }
+  
+   &__social-media {
+      display: flex;
+      justify-content: space-around;
+      padding: 16px 32px 30px 32px;
+   }
+   
+   &__icon:hover,
+   &__icon:focus {
+      background:  $blue;
+      fill: $primaryColor;
+      transition: $typicalTransition;
+   } 
+   
+   &__icon {
+      width: 44px;
+      height: 44px;
+      border: solid;
+      border: none;
+      border-radius: 50%;
+      fill: var(--white);
+      background: $backgroundEmployessColor;
+      padding: 12px;
+      display: flex;
+      fill: $lightGrey;
+   }
+ }
+ 
+ 

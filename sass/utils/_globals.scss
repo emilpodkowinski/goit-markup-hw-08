@@ -1,0 +1,30 @@
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--almost-black);
+ }
+ 
+ img {
+    vertical-align: middle;
+ }
+ 
+ * {
+    margin: 0 ;
+    padding: 0;
+ }
+ 
+ a {
+    text-decoration: none;
+ }
+ 
+ ul {
+    list-style: none;
+ }
+
+ .container {
+    width: 1200px;
+    margin: 0 auto;
+ }
+ 
+ .box {
+    width: 100%;
+ }

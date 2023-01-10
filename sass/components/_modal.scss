@@ -1,0 +1,265 @@
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 500ms 500ms ease, visibility 500ms 500ms ease,
+    transform 500ms 500ms ease;
+ }
+
+ .is-hidden .modal {
+    transform: scale(0.1);
+ }
+
+ .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    background-color: $primaryColor;
+    border-radius: 4px;
+    border: 1px solid;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+    transition-delay: 1ms;
+    transform: scale(1);
+    transform: translate(-50%, -50%);
+    transform-origin: 0% 0%;
+
+    &__heading6 {
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 12px;
+      font-style: bold;
+      font-size: 1.25em;
+      letter-spacing: 0.03em;
+      line-height: 1.15;
+      color: $almostBlack;
+   }
+  
+   &__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+  
+   &__box--name {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.75rem;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: $grey;
+   }
+  
+   &__input {
+      border: 1px solid;
+      width: 448px;
+      height: 40px;
+      border-color: rgba(33, 33, 33, 0.2);
+      padding: 16px;
+      border-radius: 4px;
+      outline: none;
+      padding-left: 42px;
+   }
+   
+   &__input:hover,
+   &__input:focus-within {
+      border-color: $blue;
+      transition: $typicalTransition;
+      transition-duration: 250ms;
+   }
+  
+   &__svg {
+      position: relative;
+      display: block;
+      width: 12px;
+      height: 12px;
+      fill: $almostBlack;
+      left: 15px;
+      bottom: 30px;
+   }
+  
+   &__svg--name {
+      position: relative;
+      display: block;
+      width: 12px;
+      height: 12px;
+      fill: $almostBlack;
+      left: 15px;
+      bottom: 25px;
+   }
+   
+   &__svg--name:hover,
+   &__svg--name:focus-within {
+      fill: $blue;
+      transition: $typicalTransition;
+      transition-duration: 250ms;
+   }
+  
+   &__box--phone {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 0.75rem;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: $grey;
+   }
+   
+   &__box--email {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 0.75rem;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: $grey;
+   }
+  
+   &__comment {
+      display: flex;
+      flex-direction: column;
+      padding-right: 390px;
+      padding-bottom: 4px;
+      font-size: 0.75rem;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: $grey;
+   }
+   
+   &__input-comment {
+      border: 1px solid;
+      width: 448px;
+      height: 120px;
+      font-size: 0.75rem;
+      border-color: rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      outline: none;
+      padding-left: 16px;
+      padding-bottom: 88px;
+   }
+   
+   &__input-comment:hover,
+   &__input-comment:focus {
+      border-color: $blue;
+      transition: $typicalTransition;
+      transition-duration: 250ms;
+   }
+  
+   &__button--send {
+      cursor: pointer;
+      font-weight: 700px;
+      font-size: 1rem;
+      line-height: 1.8;
+      letter-spacing: 0.06em;
+      text-align: center;
+      color: $primaryColor;
+      background-color: $blue;
+      width: 200px;
+      height: 50px;
+      border: none;
+      border-radius: 4px;
+   }
+   
+   &__button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+   }
+  
+   &__statement--accept {
+      color: $blue;
+      text-decoration-line: underline;
+   }
+   
+   &__policy {
+      display: flex;
+      position: relative;
+      font-size: 0.875rem;
+      letter-spacing: 0.03em;
+      line-height: 1.7;
+      color: $grey;
+      gap: 9px;
+      left: 55px;
+   }
+  
+   &__svg:hover,
+  &__svg:focus-within {
+     fill: $blue;
+     transition: $typicalTransition;
+     transition-duration: 250ms;
+  }
+  
+  &__statement {
+      display: block;
+      position: relative;
+      top: 23px;
+      left: 22px;
+   }
+   
+   &__checkbox--hidden {
+      display: none;
+   }
+   
+   &__box--name:has(> &__input:focus) > &__svg--name,
+   &__box--name:has(> &__input:hover) > &__svg--name {
+      fill: $blue;
+      transition: $typicalTransition;
+      transition-duration: 250ms;
+   }
+   
+   &__box--phone:has(> &__input:focus) > &__svg,
+   &__box--phone:has(> &__input:hover) > &__svg {
+      fill: $blue;
+      transition: $typicalTransition;
+      transition-duration: 250ms;
+   }
+   
+   &__box--email:has(> &__input:focus) > &__svg,
+   &__box--email:has(> &__input:hover) > &__svg {
+      fill: $blue;
+      transition: $typicalTransition;
+      transition-duration: 250ms;
+   }
+   
+   &__checkbox--svg{
+      border: $almostBlack 1px solid;
+      width: 16px;
+      height: 16px;
+      transform: translateY(25%);
+      fill: $primaryColor;
+   }
+   
+   &__checkbox--hidden:checked ~ &__checkbox--svg{
+      background-color: $blue;
+      border-color: $blue;
+      color: $primaryColor;
+      fill: $primaryColor;
+   }
+  
+   &__close {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 30px;
+      height: 30px;
+      background: var(--$primaryColor);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      cursor: pointer;
+   }
+ }
+
+
+ 
+ .backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+ }

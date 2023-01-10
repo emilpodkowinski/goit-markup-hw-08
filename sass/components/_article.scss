@@ -1,0 +1,40 @@
+.article {
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 30px;
+
+    &__list {
+      border-radius: 4px;
+      display: block;
+      width: 270px;
+      height: 120px;
+      background: $dirtierWhite;
+      padding-top: 30px;
+   }
+  
+   &__svg {
+      width: 65,32px;
+      height: 70px;
+      margin-bottom: 55px;
+   }
+  
+   &__heading2 {
+      font-weight: 700px;
+      font-size: 0.875rem;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      color: $almostBlack;
+      margin-bottom: 10px;
+   }
+  
+   &__description {
+      font-size: 0.875rem;
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+      color: $grey;
+   }
+ }
+
+ 

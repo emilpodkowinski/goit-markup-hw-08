@@ -1,0 +1,51 @@
+.heading1 {
+    display: block;
+    padding-top: 200px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-image: url(/goit-markup-hw-04/images/background/Img\ Overlay.png), url(/goit-markup-hw-04/images/background/peopleWorking.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+
+    &__title {
+      font-size: 2.75rem;
+      font-weight: 900px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+      color: $primaryColor;
+      text-transform: uppercase;
+      padding-left: 252px;
+      padding-right: 252px;
+   }
+  
+   &__item {
+      display: block;
+      padding-bottom: 200px;
+      padding-top: 30px;
+   }
+  
+   &__button {
+      cursor: pointer;
+      font-weight: 700px;
+      font-size: 1rem;
+      line-height: 1.8;
+      letter-spacing: 0.06em;
+      color: $almostBlack;
+      background: $dirtierWhite;
+      border-radius: 4px;
+      box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
+      width: 200px;
+      height: 50px;
+      border: none;
+   }
+   
+   &__button:hover,
+   &__button:focus {
+     color: $primaryColor;
+     background: $blue;
+     transition: $typicalTransition;
+     }
+ }
+
+ 

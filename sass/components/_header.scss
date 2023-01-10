@@ -1,0 +1,178 @@
+.header {
+    width: 100%;
+ }
+
+ .page-header {
+    display: flex;
+    align-items: center;
+    background: $primaryColor;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    border-color: $dirtyWhite;
+    padding-left: 15px; 
+ }
+
+ .logo {
+    font-family: Raleway,sans-serif;
+    font-weight: 700px;
+    font-size: 1.625rem;
+    line-height: 1.16;
+    color: $blackColor;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    &:hover,
+    &:focus {
+        color: var(--blue);
+        transition: $typicalTransition;
+    }
+    &__blue {
+        color: $blue;
+    }
+ }
+
+ .nav {
+    display: flex;
+    gap: 46px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &__agency--active {
+      cursor: pointer;
+      font-weight: 500px;
+      font-size: 0.875rem;  
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $blue;
+   }
+  
+   &__agency--active::after {
+      content:"";
+      height: 4px;
+      display: block;
+      background-color: $blue;
+      border-radius: 2px;
+      position: relative;
+      top: 31px;
+      color: $blue;
+   }
+  
+   &__portfolio {
+      cursor: pointer;
+      font-weight: 500px;
+      font-size: 0.875rem;  
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $almostBlack;
+      text-decoration: none;
+      transition-duration: 250ms;
+      transition-timing-function: $typicalTransition;
+   }
+  
+  &__portfolio:hover,
+  &__portfolio:focus {
+     color: $blue;
+     transition: $typicalTransition;
+  }
+  
+  &__contact {
+      cursor: pointer;
+      font-weight: 500px;
+      font-size: 0.875rem;  
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $almostBlack;
+      text-decoration: none;
+      transition-duration: 250ms;
+      transition-timing-function: $typicalTransition;
+   }
+   
+   &__contact:hover,
+   &__contact:focus {
+      color: $blue;
+      transition: $typicalTransition;
+   }
+
+   &__agency {
+      cursor: pointer;
+      font-weight: 500px;
+      font-size: 0.875rem;  
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $almostBlack;
+      text-decoration: none;
+      transition-duration: 250ms;
+      transition-timing-function: $typicalTransition;
+   }
+   
+   &__agency--active {
+      cursor: pointer;
+      font-weight: 500px;
+      font-size: 0.875rem;  
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $blue;
+   }
+   
+   &__agency:hover,
+   &__agency:focus {
+      color: $blue;
+      transition: $typicalTransition;
+   }
+   
+   &__portfolio--active {
+      cursor: pointer;
+      font-weight: 500px;
+      font-size: 0.875rem;  
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $blue;
+   }
+   
+   &__portfolio:hover,
+   &__portfolio:focus {
+      color: $blue;
+      transition: $typicalTransition;
+   }
+   
+   &__portfolio--active::after {
+      content:"";
+      height: 4px;
+      display: block;
+      background-color: $blue;
+      border-radius: 2px;
+      position: relative;
+      top: 31px;
+      color: $blue;
+   }
+ }
+ 
+ .contacts {
+    display: flex;
+    gap: 50px;
+    padding-right: 227px;
+
+    &__link {
+      font-weight: 500px;
+      font-size: 0.875rem;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: $grey;  
+      text-decoration: none;
+   }
+   
+   &__link:focus,
+   &__link:hover {
+      color: $blue;
+      transition: $typicalTransition;
+   }
+  
+   &__svg {
+      fill: currentColor;
+      vertical-align: middle;
+      margin-right: 10px;
+   }
+ }
+
+ 
+
+ 
