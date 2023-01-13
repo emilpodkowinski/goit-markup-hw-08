@@ -1,0 +1,166 @@
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu-container .is-hidden {
+  visibility: hidden;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.close-button {
+  width: 18.67px;
+  height: 18.67px;
+}
+
+.close-button:hover,
+.close-button:focus {
+  fill: #2196F3;
+}
+
+@media (min-width: px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #fff;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  position: absolute;
+  cursor: pointer;
+  top: 11px;
+  right: 11px;
+  color: #212121;
+}
+
+
+
+.mobile-social-media {
+  font-weight: 500;
+  font-size: 1.125;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.mobile-item {
+  display: flex;
+  margin-top: 64px;
+  gap: 20px;
+}
+
+.mobile-contact-email {
+  color: #757575;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 1.5rem;
+  line-height: 1.17;
+  text-decoration: none;
+}
+
+.mobile-contact-phone {
+  color: #2196F3;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 2.12rem;
+  line-height: 1.17;
+  text-decoration: none;
+}
+
+.mobile-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 50px;
+  padding-bottom: 64px;
+}
+
+.link-agency {
+  color: #212121;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 2.5rem;
+  line-height: 1.17;
+}
+
+.link-portfolio {
+  color: #212121;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 2.5rem;
+  line-height: 1.17;
+}
+
+.link-contact {
+  color: #212121;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 2.5rem;
+  line-height: 1.17;
+}
+
+.link-agency:hover,
+.link-agency:focus {
+  color: #2196F3;
+}
+
+.link-portfolio:hover,
+.link-portfolio:focus {
+  color: #2196F3;
+}
+
+.link-contact:hover,
+.link-contact:focus {
+  color: #2196F3;
+}
+
+.mobile-nav {
+  display: block;
+  gap: 53px;
+}
+
+.menu-svg {
+  fill: #212121;
+}
+.menu-svg:hover,
+.menu-svg:focus {
+  fill: #2196F3;
+}
