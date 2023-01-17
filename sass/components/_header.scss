@@ -9,7 +9,8 @@
     justify-content: space-between;
     border-bottom: 1px solid;
     border-color: $dirtyWhite;
-    padding-left: 15px; 
+    padding-left: 0 auto;
+    padding-right: 0 auto;
  }
 
  .logo {
@@ -150,7 +151,6 @@
     display: flex;
     gap: 50px;
     padding-right: 60px;
-
     &__link {
       font-weight: 500px;
       font-size: 0.875rem;
@@ -173,7 +173,7 @@
    }
  }
 
- @media (max-width: 768px) {
+ @media (max-width: 480px) {
    .nav {
 visibility: hidden;
    }
@@ -185,8 +185,9 @@ visibility: hidden;
    }
  }
 
-
-
- 
-
- 
+ @media screen and (min-width: 768px) and (max-width: 1200px) {
+   .contacts {
+      display: block;
+      margin-right: 400px;
+}
+ }

@@ -33,12 +33,41 @@
   }
  }
 
- @media (max-width: 767px){
+ @media screen and (max-width: 480px) {
    .buttons {
+      margin-left: 1px;
       display: flex;
+      max-width: 400px;
       flex-wrap: wrap;
       justify-content: flex-start;
+      gap: 8px;
+      padding-bottom: 50px;
+      padding-left: 15px;
+   }
+
+   .page-header {
+    margin-left: 15px;
    }
  }
 
- 
+ @media screen and (max-width: 480px) {
+   .main-portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      width: 300px;
+   }
+   .main-portfolio {
+    padding-left: 0 auto;
+    padding-right: 0 auto;
+    width: 100%;
+   }
+ }
+
+ @media screen and (min-width: 481px) and (max-width: 1200px) {
+  .buttons {
+    display: flex;
+    width: 1200px;
+    gap:40px;
+    padding-right: 450px;
+}
+}

@@ -37,4 +37,56 @@
    }
  }
 
+
+ @media screen and (max-width: 480px) {
+ .article {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 150px;
+   margin-bottom: 60px;
+
+   &__list {
+   border-radius: 4px;
+   width: 270px;
+   height: 120px;
+   background: $dirtierWhite;
+margin-right: 0 auto;
+margin-left: 0 auto;
+  }
  
+  &__svg {
+     width: 65,32px;
+     height: 70px;
+     margin-bottom: 55px;
+  }
+ 
+  &__heading2 {
+     font-weight: 700px;
+     font-size: 0.875rem;
+     line-height: 1.14;
+     letter-spacing: 0.03em;
+     color: $almostBlack;
+     margin-bottom: 10px;
+  }
+ 
+  &__description {
+     font-size: 0.875rem;
+     line-height: 1.7;
+     letter-spacing: 0.03em;
+     color: $grey;
+  }
+}
+.section {
+   display: block;
+   align-items: center;
+}
+ }
+
+ @media screen and (min-width: 481px) and (max-width: 1200px) {
+   .article {margin-bottom: 118px;
+      width: 768px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 180px;
+ }
+ }

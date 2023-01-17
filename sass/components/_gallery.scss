@@ -4,6 +4,7 @@
     align-items: center;
     padding-top: 50px;
     gap: 30px;
+    
 
     &__item {
       display: block;
@@ -69,5 +70,26 @@
       color: $grey;
    }
  }
- 
- 
+
+ @media screen and (max-width: 767px) {
+   .gallery {
+      justify-content: center;
+      align-items: center;
+      max-width: 767px;
+      margin-left: 0 auto;
+      margin-right: 0 auto;
+   }
+ }
+
+ @media screen and (min-width: 481px) and (max-width: 1200px) {
+   .gallery {
+     display: flex;
+     flex-wrap: wrap;
+     width: 800px;
+     gap:40px;
+     padding-left: 0 auto;
+     padding-right: 0 auto;
+ }
+ }
+
+

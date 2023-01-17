@@ -48,4 +48,71 @@
      }
  }
 
- 
+ @media screen and (max-width: 480px) {
+   .heading1 {
+      display: block;
+      height: 180px;
+      max-width: 480px;
+      padding-top: 36px;
+      padding-bottom: 3px;
+      text-align: center;
+      background-image: url(/goit-markup-hw-08/images/background/ImgOverlay480.png), url(/goit-markup-hw-08/images/background/peopleWorking480.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto 100%;
+   }
+   .heading1__title {
+      font-size: 15px;
+      font-weight: 900px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+      color: $primaryColor;
+   }
+   .heading1__item {
+      display: block;
+      align-items: center;
+   }
+   .heading1__button {
+      cursor: pointer;
+      font-weight: 700px;
+      font-size: 1rem;
+      line-height: 1.8;
+      letter-spacing: 0.06em;
+      color: $almostBlack;
+      background: $dirtierWhite;
+      border-radius: 4px;
+      box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
+      width: 200px;
+      height: 50px;
+      border: none;
+   }
+   .heading1__title {
+      width: 380px;
+      padding-left: 20px;
+      padding-top: 30px;
+   }
+   .heading1__item {
+      padding-bottom: 0;
+      padding-top: 15px;
+   }
+ }
+
+ @media screen and (min-width: 481px) and (max-width: 1200px) {
+   .heading1 {
+      display: block;
+      height: 450px;
+      max-width: 1200px;
+      padding-top: 118px;
+      align-items: center;
+      background-image: url(/goit-markup-hw-08/images/background/ImgOverlayTablet.png), url(/goit-markup-hw-08/images/background/peopleWorkingTablet.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto 100%;
+   }
+
+   .heading1__title {
+      display: block;
+      width: 400px;
+   }
+}
+

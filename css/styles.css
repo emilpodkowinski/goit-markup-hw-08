@@ -5,7 +5,7 @@
   list-style: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 481px) {
   .menu {
     display: none;
   }
@@ -23,6 +23,7 @@
   justify-content: center;
   margin: 0;
   padding: 0;
+  padding-top: 20px;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -39,7 +40,7 @@
   fill: #2196F3;
 }
 
-@media (min-width: px) {
+@media (min-width: 481px) {
   .menu-toggle {
     display: none;
   }
@@ -69,8 +70,6 @@
   right: 11px;
   color: #212121;
 }
-
-
 
 .mobile-social-media {
   font-weight: 500;
@@ -153,8 +152,9 @@
 }
 
 .mobile-nav {
-  display: block;
-  gap: 53px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .menu-svg {
@@ -164,3 +164,4 @@
 .menu-svg:focus {
   fill: #2196F3;
 }
+
