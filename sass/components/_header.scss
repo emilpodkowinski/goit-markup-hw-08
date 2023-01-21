@@ -175,17 +175,24 @@
 
  @media (max-width: 480px) {
    .nav {
-visibility: hidden;
+display: none;
    }
    .contacts {
-      visibility: hidden;
+      display: none;
    }
    .page-header {
       justify-content:space-between;
+      margin-right: 0 auto;
+      margin-left: 0;
+      width: 200px;
+   }
+   .logo{
+      margin-top: 16px;
+      margin-bottom: 16px;
    }
  }
 
- @media screen and (min-width: 768px) and (max-width: 1200px) {
+ @media screen and (min-width: 481px) and (max-width: 1200px) {
    .contacts {
       display: block;
       margin-right: 400px;

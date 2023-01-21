@@ -31,24 +31,66 @@
  }
 
  @media screen and (max-width: 480px) {
+   .client {
+      font-weight: 700px;
+      font-size: 2.25rem;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+      color: $almostBlack;
+      text-align: center;
+      align-items: center;
+      padding-bottom: 30px;
+      margin-top: 60px;
+  
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        gap: 30px;
+        justify-content: center;
+     }
+     
+     &__link {
+        display: block;
+        border: 1px solid $lightGrey;
+        border-radius: 4px;
+        fill:$lightGrey;
+        padding: 16px 32px;
+     }
+     
+     &__link:hover,
+     &__link:focus {
+        border-color: $blue;
+        fill: $blue;
+        transition: $typicalTransition;
+     }
+   }
+   .clients {
+      display: block;
+      max-width: 100%;
+      margin-bottom: 60px;
+ }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1200px) {
    .client__list {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
-      max-width: 480px;
+      width: 100%;
+      gap: 30px;
    }
+
+   .client__link {
+      width: 226px;
+      align-items: center;
+      padding-left: 60px;
+   }
+
+   .clients {
+      width: 100%;
+      padding-left: 14px;
+      padding-right: 14px;
+   }
+
+   
 }
-
-   @media screen and (min-width: 481px) and (max-width: 1200px) {
-      .client__list {
-         display: flex;
-         flex-wrap: wrap;
-         width: 600px;
-      }
-      .client {
-         width: 600px;
-      }
-   }
- 
-
- 

@@ -13,7 +13,6 @@
       referrerpolicy="no-referrer"
     />
     <link class="link" rel="stylesheet" href="/goit-markup-hw-08/css/main.min.css" />
-    <link class="link" rel="stylesheet" href="/goit-markup-hw-08/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,11 +25,11 @@
       <div class="page-header container"> 
       <a href="/goit-markup-hw-08/index.html" class="logo"><span class="logo__blue"> Web</span>Studio</a>
       <button
-          class="menu-toggle js-open-menu"
+          class="menu__toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg class="menu-svg"
+          <svg class="menu__svg"
             width="24"
             height="24"
             fill="currentColor"
@@ -226,7 +225,7 @@
       </ul>
     </main>
     <footer class="footer box">
-      <div class="container">
+      <div class="container footer__mobile">
       <a href="#" class="logo">
         <span class="logo__blue">Web</span><span class="logo__white">Studio</span>
       </a>
@@ -290,21 +289,19 @@
           <label>
             <input required name="sign-up-form" class="footer__input--email" type="email" placeholder="E-mail" />
           </label>
-          <button type="submit" class="footer__button" >ZAPISZ SIĘ</button>
+          <button type="submit" class="footer__button" >
+            <svg width="24px" height="24px" class="footer__icon">
+            <use
+            href="/goit-markup-hw-06/images/icons.svg#icon-icon-send">
+            </use>
+          </svg>ZAPISZ SIĘ</button>
         </form>
-      </div>
-      <div class="footer__icon">
-        <svg width="24px" height="24px">
-          <use
-          href="/goit-markup-hw-06/images/icons.svg#icon-icon-send">
-          </use>
-        </svg>
       </div>
       </div>
       </div>
     </footer>
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <button class="menu__toggle js-close-menu">
         <svg class="close-button"
           fill="currentColor"
           viewBox="0 0 20 20"
@@ -320,22 +317,22 @@
         </svg>
       </button>
 <div>
-<div class="mobile-nav">
-      <ul class="mobile-nav">
-        <li><a href="" class="link-agency">Agencja</a></li>
-        <li><a href="" class="link-portfolio">Portfolio</a></li>
-        <li><a href="" class="link-contact">Kontakt</a></li>
+<div class="mobile">
+      <ul class="mobile">
+        <li><a href="" class="mobile__link--agency">Agencja</a></li>
+        <li><a href="" class="mobile__link--portfolio">Portfolio</a></li>
+        <li><a href="" class="mobile__link--contact">Kontakt</a></li>
         </ul>
 </div>
-        <ul class="mobile-contact">
-          <li><a href="" class="mobile-contact-phone">+48 111 111 111</a></li>
-          <li><a href=""class="mobile-contact-email">info@devstudio.com</a></li>
+        <ul class="mobile__contact">
+          <li><a href="" class="mobile__contact--phone">+48 111 111 111</a></li>
+          <li><a href=""class="mobile__contact--email">info@devstudio.com</a></li>
         </ul>
-        <ul class="mobile-item">
-          <li><a href="" class="mobile-social-media">Instagram</a></li>
-          <li><a href="" class="mobile-social-media">Twitter</a></li>
-          <li><a href="" class="mobile-social-media">Facebook</a></li>
-          <li><a href="" class="mobile-social-media">Linkedin</a></li>
+        <ul class="mobile__item">
+          <li><a href="" class="mobile__social-media">Instagram</a></li>
+          <li><a href="" class="mobile__social-media">Twitter</a></li>
+          <li><a href="" class="mobile__social-media">Facebook</a></li>
+          <li><a href="" class="mobile__social-media">Linkedin</a></li>
         </ul>
 </div>
         

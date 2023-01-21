@@ -77,20 +77,30 @@
  }
  
  @media screen and (max-width: 480px) {
-   .employess__list {
+   .employess {
+      max-width: 480px;
+
+   &__list {
       display: flex;
       flex-wrap: wrap;
    }
-   .employess {
-      max-width: 480px;
+
+   &employess__theme {
+      width: 100%;
    }
  }
+}
 
  @media screen and (min-width: 481px) and (max-width: 1200px) {
    .employess__list {
       display: flex;
       flex-wrap: wrap;
-      gap: 60px;
+   }
+
+   .team {
+      width: 100%;
+      padding-left: 80px;
+      padding-right: 80px;
    }
  }
  
