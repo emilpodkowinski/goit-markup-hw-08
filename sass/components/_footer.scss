@@ -376,7 +376,6 @@
         flex-direction: column;
         width: 100%;
         gap: 70px;
-        padding-right: 350px;
      }
   
      &__social-media {
@@ -429,7 +428,7 @@
   }
 
   .footer__mobile {
-   max-width: 800px;
+   max-width: 100%;
   }
   }
   
