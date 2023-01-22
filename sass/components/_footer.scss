@@ -311,13 +311,14 @@
         flex-wrap: wrap;
         width: 100%;
         gap: 70px;
+        padding-left: 70px;
      }
   
      &__social-media {
         display: flex;
         flex-direction: column;
         margin-top: -18px; 
-        padding-left: 100px;
+        padding-left: 90px;
         text-align: center;
      }
      
@@ -334,6 +335,7 @@
         text-align: center;
         align-items: center;
         margin-bottom: 60px;
+        padding-right: 120px;
      }
     
      &__input {
@@ -342,6 +344,10 @@
         gap: 12px;
         margin-top: 20px;
         align-items: center;
+     }
+
+     &__input--email {
+      width: 450px;
      }
      
    .address {
@@ -352,12 +358,12 @@
       text-align: center;
    }
   }
-  .logo {
+  .logo__footer {
    width: 100%;
-   padding-left: 50px;
+   padding-left: 120px;
   }
 
   .footer__mobile {
-   width: 100%;
+   max-width: 800px;
   }
   }
